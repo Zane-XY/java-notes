@@ -26,7 +26,6 @@ look behind(positive)   | prefixed by | `(?<=)`
 look behind(negative)   | not prefixed by | `(?<!)`
 
 ## Repetition greey and lazy
-## Cheat Sheet
 usage         | example
 ------------- | -------------
 greedy one or many | `+`
