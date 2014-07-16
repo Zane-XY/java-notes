@@ -1,7 +1,7 @@
 Abstract Factory
 ======
-this pattern is so simple that almost sounds ridiculous to call this as a design pattern.
-If you know how Polymorphism works in OO languages, it's just means a method takes a polymorphic type.
+this pattern is so simple almost sounds ridiculous to call this as a design pattern.
+If you know how Polymorphism works in OO languages, it just means a method takes a polymorphic parameter.
 
 I found [this explaination](http://java.dzone.com/articles/design-patterns-abstract-factory) is close to the original definition.
 
