@@ -9,13 +9,13 @@ so, no need to use other shitty wrappers.
 
 ```java
 Session session = Session.getInstance(Config.props, null);
-Message msg = new MimeMessage(session);
+MimeMessage msg = new MimeMessage(session);
 try {
     msg.setFrom(new InternetAddress(Config.get("mail.sender")));
 
     msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(Config.get("mail.recipient"), false));
     msg.setSubject("subj");
-    msg.setText("body");
+    msg.setText(content, "utf-8", "html");
     msg.setHeader("X-Mailer", "header");
     msg.setSentDate(new Date());
     SMTPTransport transport = (SMTPTransport) session.getTransport("smtp");
