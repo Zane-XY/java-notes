@@ -1,6 +1,26 @@
 read
 ======
 
+#### read from classpath
+```java
+InputStream tmpl = getClass().getClassLoader().getResourceAsStream("tmpl.html");
+```
+
+#### from `InputStream` to `String`, the `Scanner` trick
+```java
+Scanner s = new Scanner(inputStream).useDelimiter("\\A")
+return s.hasNext() ? s.next() : "";
+```
+
+#### enumerate `InputStream` by line
+```java
+BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+String line;
+while ((line = in.readLine()) != null) {
+    ...
+}
+```
+
 ###### encoding
 - Java 7 and later
 `java.nio.charset.StandardCharsets`
@@ -9,7 +29,7 @@ read
 - Java 6 
 `Charset.defaultCharset()`
 
-######read file into String
+###### read file into String
 - Java 7 and later
 ```java
 static String readFile(String path, Charset encoding) 
