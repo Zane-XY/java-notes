@@ -20,6 +20,9 @@ while ((line = in.readLine()) != null) {
     ...
 }
 ```
+#### lineSeparator
+After Java 7 `System.lineSeparator()`
+Before Java 7 `System.getProperty("line.separator");`
 
 ###### encoding
 - Java 7 and later
