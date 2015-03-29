@@ -1,6 +1,18 @@
 Mediator
 ======
 
+- The mediator pattern defines an object that encapsulates how a set of objects interact.
+- With the mediator pattern, communication between objects is encapsulated with a mediator object. Objects no longer communicate directly with each other, but instead communicate through the mediator. This reduces the dependencies between communicating objects, thereby lowering the coupling.
+
+
+![alt text](http://www.javacodegeeks.com/wp-content/uploads/2013/07/mediator-pattern.png "mediator pattern")
+
+##summary
+- object interactions through interface
+- interface defines interaction contracts
+- class constructor takes reference of mediator interface
+
+
 ##The Problem
 
 ```java

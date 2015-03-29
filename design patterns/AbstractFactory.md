@@ -17,4 +17,4 @@ the *static factory method* pattern is seen in *Effective Java* and said to have
 - hide initialisation process, if you use constructors you have to create objects every time, but this can hide the creation details, and let you decide if you need to create a new object on heap. <br> ```java Runtime.getRuntime() // singleton
 Boolean.valueOf(true) // flyweight return cached value
 ```
-- 
+-
